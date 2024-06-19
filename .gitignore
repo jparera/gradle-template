@@ -28,3 +28,7 @@ replay_pid*
 # Visual Studio Code directory
 /.vscode
 
+# Build directories
+/bin
+/build
+
