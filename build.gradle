@@ -2,20 +2,25 @@ plugins {
     id 'java'
 }
 
+group = 'net.wrlt'
+version = '1.0.0'
+
 repositories {
     mavenCentral()
 }
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(23)
     }
+    sourceCompatibility = JavaVersion.VERSION_23
+    targetCompatibility = JavaVersion.VERSION_23
 }
 
 testing {
     suites {
         test {
-            useJUnitJupiter('5.10.2')
+            useJUnitJupiter('5.10.3')
         }
     }
 }
